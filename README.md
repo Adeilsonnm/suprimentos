@@ -20,7 +20,7 @@
 
 - MySQL 5.7
   - Usuário: root
-  - Senha: 123456
+  - Senha: 
   - Porta padrão: 3306
 
 - Ferramentas de Desenvolvimento
@@ -35,7 +35,7 @@
 2. Conecte usando as credenciais:
    - Host: localhost
    - Usuário: root
-   - Senha: 123456
+   - Senha: 
    - Porta: 3306
 
 3. Execute os seguintes comandos SQL:
@@ -96,7 +96,7 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=banco_suprimentos
 DB_USERNAME=root
-DB_PASSWORD=123456
+DB_PASSWORD=
 ```
 
 7. Gere os assets:
