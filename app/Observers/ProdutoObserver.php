@@ -5,16 +5,10 @@ namespace App\Observers;
 use App\Models\Produto;
 use Illuminate\Support\Facades\Log;
 
-/**
- * Observer do Produto
- * 
- * Monitora e registra todas as operações realizadas
- * nos produtos do sistema
- */
 class ProdutoObserver
 {
     /**
-     * Manipula o evento de criação de produto
+     * Handle the Produto "created" event.
      */
     public function created(Produto $produto): void
     {
@@ -27,7 +21,7 @@ class ProdutoObserver
     }
 
     /**
-     * Manipula o evento de atualização de produto
+     * Handle the Produto "updated" event.
      */
     public function updated(Produto $produto): void
     {
@@ -40,7 +34,7 @@ class ProdutoObserver
     }
 
     /**
-     * Manipula o evento de exclusão de produto
+     * Handle the Produto "deleted" event.
      */
     public function deleted(Produto $produto): void
     {
