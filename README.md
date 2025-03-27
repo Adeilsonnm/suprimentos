@@ -46,6 +46,120 @@ GRANT ALL PRIVILEGES ON banco_suprimentos.* TO 'root'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
+### 1.4 Inicialização do Projeto do GitHub
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/[usuario]/suprimentos.git
+cd suprimentos
+```
+
+2. Instale as dependências do PHP:
+```bash
+composer install
+```
+
+3. Instale as dependências do Node.js:
+```bash
+npm install
+```
+
+4. Configure o ambiente:
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+5. Configure o banco de dados:
+   - Abra o HeidiSQL
+   - Conecte com as credenciais mencionadas (root/123456)
+   - Crie o banco de dados:
+   ```sql
+   CREATE DATABASE IF NOT EXISTS banco_suprimentos;
+   ```
+   - Importe o banco de dados base:
+   ```bash
+   # Via linha de comando
+   mysql -u root -p123456 banco_suprimentos < util/base_de_dados.sql
+
+   # Ou via HeidiSQL:
+   # 1. Clique com botão direito no banco 'banco_suprimentos'
+   # 2. Selecione "Carregar arquivo SQL"
+   # 3. Navegue até a pasta util/base_de_dados.sql
+   # 4. Execute a importação
+   ```
+
+6. Configure o arquivo .env:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=banco_suprimentos
+DB_USERNAME=root
+DB_PASSWORD=123456
+```
+
+7. Gere os assets:
+```bash
+npm run build
+```
+
+8. Crie o link simbólico do storage:
+```bash
+php artisan storage:link
+```
+
+9. Limpe os caches:
+```bash
+php artisan config:clear
+php artisan cache:clear
+php artisan view:clear
+```
+
+10. Inicie o servidor de desenvolvimento:
+```bash
+php artisan serve
+```
+
+11. Acesse o sistema:
+- Frontend: http://localhost:8000
+- Painel Admin: http://localhost:8000/admin
+  - Email: admin@admin.com
+  - Senha: password
+
+### 1.5 Verificação da Instalação Local
+
+Lista de verificação:
+- [ ] Repositório clonado com sucesso
+- [ ] Dependências do Composer instaladas
+- [ ] Dependências do Node.js instaladas
+- [ ] Arquivo .env configurado
+- [ ] Banco de dados importado
+- [ ] Assets compilados
+- [ ] Storage link criado
+- [ ] Servidor rodando
+- [ ] Acesso ao frontend funcionando
+- [ ] Acesso ao painel admin funcionando
+
+Em caso de problemas:
+1. Verifique as permissões das pastas:
+```bash
+chmod -R 777 storage bootstrap/cache
+```
+
+2. Verifique se todos os serviços estão rodando:
+```bash
+# Verificar status do MySQL
+service mysql status
+
+# Verificar versão do PHP
+php -v
+```
+
+3. Logs para verificação:
+- Laravel: `storage/logs/laravel.log`
+- MySQL: `/var/log/mysql/error.log`
+
 ## 2. Processo de Instalação
 
 ### 2.1 Preparação do Ambiente
