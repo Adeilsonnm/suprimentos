@@ -98,7 +98,7 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=banco_suprimentos
 DB_USERNAME=root
-DB_PASSWORD=
+DB_PASSWORD=123456
 ```
 
 2. Instalar dependências frontend:
@@ -187,4 +187,4 @@ Lista de verificação pós-instalação:
 Para suporte, consulte:
 - Documentação do Laravel: https://laravel.com/docs
 - Documentação do Filament: https://filamentphp.com/docs
-- Fóruns da comunidade Laravel
+- Fóruns da comunidade Laravel 
