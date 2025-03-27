@@ -64,3 +64,33 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Configuração do Ambiente
+
+### Assets e Frontend
+Para compilar os assets do projeto:
+
+1. Instale as dependências do Node.js:
+```bash
+npm install
+```
+
+2. Em ambiente de desenvolvimento:
+```bash
+npm run dev
+```
+
+3. Para produção:
+```bash
+npm run build
+```
+
+## Estrutura do Projeto
+
+### Views
+- `resources/views/welcome.blade.php`: Página inicial com listagem de produtos
+- `resources/views/livewire/lista-produtos.blade.php`: Template para exibição dos cards de produtos
+
+### Componentes Livewire
+- `app/Livewire/ListaProdutos.php`: Gerencia a listagem paginada de produtos
+- `app/Livewire/BuscaProdutos.php`: Gerencia a busca de produtos
