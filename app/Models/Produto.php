@@ -8,12 +8,21 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Validation\Rule;
 
+/**
+ * Modelo de Produto
+ * 
+ * Responsável por gerenciar os dados e regras de negócio
+ * relacionados aos produtos no sistema
+ */
 class Produto extends Model
 {
     use HasFactory, SoftDeletes;
 
     protected $table = 'produtos';
 
+    /**
+     * Campos que podem ser preenchidos em massa
+     */
     protected $fillable = [
         'nome',
         'descricao',
@@ -21,6 +30,9 @@ class Produto extends Model
         'status',
     ];
 
+    /**
+     * Conversão automática de tipos
+     */
     protected $casts = [
         'preco' => 'decimal:2',
         'status' => StatusProduto::class,
@@ -28,14 +40,17 @@ class Produto extends Model
 
     /**
      * Regras de validação para o modelo
+     * 
+     * Define as regras para garantir a integridade dos dados
+     * durante a criação e atualização de produtos
      */
     public static function rules(): array
     {
         return [
-            'nome' => ['required', 'string', 'max:255'],
-            'descricao' => ['required', 'string'],
-            'preco' => ['required', 'numeric', 'min:0'],
-            'status' => ['required', Rule::enum(StatusProduto::class)],
+            'nome' => ['required', 'string', 'max:255'],      // Nome é obrigatório
+            'descricao' => ['required', 'string'],            // Descrição é obrigatória
+            'preco' => ['required', 'numeric', 'min:0'],      // Preço deve ser positivo
+            'status' => ['required', Rule::enum(StatusProduto::class)], // Status válido
         ];
     }
 } 
