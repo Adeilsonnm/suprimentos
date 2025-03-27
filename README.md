@@ -235,11 +235,16 @@ Extensões recomendadas:
 1. Iniciar o servidor de desenvolvimento:
 ```bash
 php artisan serve
+npm run dev ###(iniciar VITE)
 ```
 
 2. Acessar o sistema:
 - Frontend: http://localhost:8000
 - Admin: http://localhost:8000/admin
+
+### 2.1 Acesso de testes
+- email : admin@admin.brasil
+- senha : 123456
 
 ### 2.6 Comandos Úteis
 
