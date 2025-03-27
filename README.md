@@ -1,4 +1,5 @@
-# Requisitos e Instalação do Sistema de Suprimentos
+# Requisitos e Instalação do Sistema de  gerenciamento de Produtos Laravel 11
+##Adeilson 27-03-2025
 
 ## 1. Requisitos do Sistema
 
@@ -12,6 +13,7 @@
     - php8.3-fpm
     - php8.3-mysql
     - php8.3-curl
+    - php8.3-intl
     - php8.3-gd
     - php8.3-mbstring
     - php8.3-xml
@@ -124,8 +126,8 @@ php artisan serve
 11. Acesse o sistema:
 - Frontend: http://localhost:8000
 - Painel Admin: http://localhost:8000/admin
-  - Email: admin@admin.com
-  - Senha: password
+email : admin@admin.brasil
+senha : 123456
 
 ### 1.5 Verificação da Instalação Local
 
@@ -284,15 +286,6 @@ php artisan config:clear
 php artisan migrate:fresh
 ```
 
-### 3.2 Verificação do Sistema
-
-Lista de verificação pós-instalação:
-- [ ] Servidor PHP 8.3 está rodando
-- [ ] MySQL 5.7 está acessível
-- [ ] Banco de dados está criado e configurado
-- [ ] Usuário admin do Filament foi criado
-- [ ] Assets foram compilados
-- [ ] Sistema está acessível via navegador
 
 ## 4. Manutenção
 
@@ -300,10 +293,3 @@ Lista de verificação pós-instalação:
 - Manter as dependências atualizadas
 - Monitorar logs de erro
 - Verificar atualizações de segurança
-
-## 5. Suporte
-
-Para suporte, consulte:
-- Documentação do Laravel: https://laravel.com/docs
-- Documentação do Filament: https://filamentphp.com/docs
-- Fóruns da comunidade Laravel
