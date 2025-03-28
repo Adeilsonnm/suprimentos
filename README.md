@@ -276,15 +276,15 @@ php artisan migrate:fresh
 ```
 
 ## 5. Estrutura do Projeto
-O projeto está organizado nos seguintes diretórios principais:
+### O projeto está organizado nos seguintes diretórios principais:
 
-app/Enums/ - Contém as definições de enums
-app/DataTransferObjects/ - Contém os DTOs
-app/Models/ - Contém os modelos
-app/Filament/ - Contém os recursos do Filament
-app/Livewire/ - Contém os componentes Livewire
-app/Observers/ - Contém os observers
-resources/views/ - Contém as views
+- app/Enums/ - Contém as definições de enums
+- app/DataTransferObjects/ - Contém os DTOs
+- app/Models/ - Contém os modelos
+- app/Filament/ - Contém os recursos do Filament
+- app/Livewire/ - Contém os componentes Livewire
+- app/Observers/ - Contém os observers
+- resources/views/ - Contém as views
 
 ## 4. Alguns Recursos
 
