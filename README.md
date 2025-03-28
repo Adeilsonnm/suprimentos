@@ -1,4 +1,4 @@
-# Requisitos e Instalação do Sistema de gerenciamento de Produtos
+# MVP Sistema de gerenciamento de Produtos
 
 ## 1. Requisitos do Sistema
 
