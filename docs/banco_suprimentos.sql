@@ -15,11 +15,11 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
--- Dumping database structure for banco_suplimentos
-CREATE DATABASE IF NOT EXISTS `banco_suplimentos` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `banco_suplimentos`;
+-- Dumping database structure for banco_suprimentos
+CREATE DATABASE IF NOT EXISTS `banco_suprimentos` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `banco_suprimentos`;
 
--- Dumping structure for table banco_suplimentos.cache
+-- Dumping structure for table banco_suprimentos.cache
 CREATE TABLE IF NOT EXISTS `cache` (
   `key` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `value` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -27,12 +27,12 @@ CREATE TABLE IF NOT EXISTS `cache` (
   PRIMARY KEY (`key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table banco_suplimentos.cache: ~2 rows (approximately)
+-- Dumping data for table banco_suprimentos.cache: ~2 rows (approximately)
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
 	('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:2;', 1743103107),
 	('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1743103107;', 1743103107);
 
--- Dumping structure for table banco_suplimentos.cache_locks
+-- Dumping structure for table banco_suprimentos.cache_locks
 CREATE TABLE IF NOT EXISTS `cache_locks` (
   `key` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `owner` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -40,9 +40,9 @@ CREATE TABLE IF NOT EXISTS `cache_locks` (
   PRIMARY KEY (`key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table banco_suplimentos.cache_locks: ~0 rows (approximately)
+-- Dumping data for table banco_suprimentos.cache_locks: ~0 rows (approximately)
 
--- Dumping structure for table banco_suplimentos.failed_jobs
+-- Dumping structure for table banco_suprimentos.failed_jobs
 CREATE TABLE IF NOT EXISTS `failed_jobs` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `uuid` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -55,9 +55,9 @@ CREATE TABLE IF NOT EXISTS `failed_jobs` (
   UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table banco_suplimentos.failed_jobs: ~0 rows (approximately)
+-- Dumping data for table banco_suprimentos.failed_jobs: ~0 rows (approximately)
 
--- Dumping structure for table banco_suplimentos.jobs
+-- Dumping structure for table banco_suprimentos.jobs
 CREATE TABLE IF NOT EXISTS `jobs` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `queue` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -70,9 +70,9 @@ CREATE TABLE IF NOT EXISTS `jobs` (
   KEY `jobs_queue_index` (`queue`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table banco_suplimentos.jobs: ~0 rows (approximately)
+-- Dumping data for table banco_suprimentos.jobs: ~0 rows (approximately)
 
--- Dumping structure for table banco_suplimentos.job_batches
+-- Dumping structure for table banco_suprimentos.job_batches
 CREATE TABLE IF NOT EXISTS `job_batches` (
   `id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -87,9 +87,9 @@ CREATE TABLE IF NOT EXISTS `job_batches` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table banco_suplimentos.job_batches: ~0 rows (approximately)
+-- Dumping data for table banco_suprimentos.job_batches: ~0 rows (approximately)
 
--- Dumping structure for table banco_suplimentos.migrations
+-- Dumping structure for table banco_suprimentos.migrations
 CREATE TABLE IF NOT EXISTS `migrations` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -97,14 +97,14 @@ CREATE TABLE IF NOT EXISTS `migrations` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table banco_suplimentos.migrations: ~4 rows (approximately)
+-- Dumping data for table banco_suprimentos.migrations: ~4 rows (approximately)
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 	(1, '0001_01_01_000000_create_users_table', 1),
 	(2, '0001_01_01_000001_create_cache_table', 1),
 	(3, '0001_01_01_000002_create_jobs_table', 1),
 	(4, '2024_03_27_000001_create_produtos_table', 1);
 
--- Dumping structure for table banco_suplimentos.password_reset_tokens
+-- Dumping structure for table banco_suprimentos.password_reset_tokens
 CREATE TABLE IF NOT EXISTS `password_reset_tokens` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -112,9 +112,9 @@ CREATE TABLE IF NOT EXISTS `password_reset_tokens` (
   PRIMARY KEY (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table banco_suplimentos.password_reset_tokens: ~0 rows (approximately)
+-- Dumping data for table banco_suprimentos.password_reset_tokens: ~0 rows (approximately)
 
--- Dumping structure for table banco_suplimentos.produtos
+-- Dumping structure for table banco_suprimentos.produtos
 CREATE TABLE IF NOT EXISTS `produtos` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -127,7 +127,7 @@ CREATE TABLE IF NOT EXISTS `produtos` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table banco_suplimentos.produtos: ~5 rows (approximately)
+-- Dumping data for table banco_suprimentos.produtos: ~5 rows (approximately)
 INSERT INTO `produtos` (`id`, `nome`, `descricao`, `preco`, `status`, `created_at`, `updated_at`, `deleted_at`) VALUES
 	(1, 'Carro', 'Gol 1.0 ', 32.00, 'ativo', '2025-03-28 00:18:07', '2025-03-28 00:18:07', NULL),
 	(2, 'Arroz', 'Tio Jorge', 123.90, 'ativo', '2025-03-28 00:50:16', '2025-03-28 00:50:16', NULL),
@@ -135,7 +135,7 @@ INSERT INTO `produtos` (`id`, `nome`, `descricao`, `preco`, `status`, `created_a
 	(4, 'Cerveja', 'Puro Malte', 23.00, 'inativo', '2025-03-28 01:26:34', '2025-03-28 01:26:34', NULL),
 	(5, 'Fejão', 'Cristal  1kg', 123.90, 'ativo', '2025-03-28 01:26:53', '2025-03-28 01:26:53', NULL);
 
--- Dumping structure for table banco_suplimentos.sessions
+-- Dumping structure for table banco_suprimentos.sessions
 CREATE TABLE IF NOT EXISTS `sessions` (
   `id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `user_id` bigint(20) unsigned DEFAULT NULL,
@@ -148,11 +148,11 @@ CREATE TABLE IF NOT EXISTS `sessions` (
   KEY `sessions_last_activity_index` (`last_activity`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table banco_suplimentos.sessions: ~1 rows (approximately)
+-- Dumping data for table banco_suprimentos.sessions: ~1 rows (approximately)
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
 	('HqJs8hpOO339HaoTKEXLy3hLmh3qeowRcQ2FV6T5', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoibG9OajNUQzUyWkFYeGp1bGVTMTZNcjJUbm9Md2RoTVlLUjZCNmZ1VCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbiI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiQuTmxVaHdsUm9UU1NDeHp5WjZxbGEuV1puU1FCaHpLYkE4VTNnbWpwNkp3U3RZa2dEbTV1ZSI7fQ==', 1743103073);
 
--- Dumping structure for table banco_suplimentos.users
+-- Dumping structure for table banco_suprimentos.users
 CREATE TABLE IF NOT EXISTS `users` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -166,7 +166,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   UNIQUE KEY `users_email_unique` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table banco_suplimentos.users: ~1 rows (approximately)
+-- Dumping data for table banco_suprimentos.users: ~1 rows (approximately)
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
 	(1, 'admin', 'admin@admin.brasil', NULL, '$2y$12$.NlUhwlRoTSSCxzyZ6qla.WZnSQBhzKbA8U3gmjp6JwStYkgDm5ue', NULL, '2025-03-27 23:53:01', '2025-03-27 23:53:01');
 

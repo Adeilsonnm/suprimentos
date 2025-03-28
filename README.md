@@ -82,12 +82,12 @@ php artisan key:generate
    - Importe o banco de dados base:
    ```bash
    # Via linha de comando
-   mysql -u root -p123456 banco_suprimentos < util/base_de_dados.sql
+   mysql -u root -p123456 banco_suprimentos < util/banco_suprimentos.sql
 
    # Ou via HeidiSQL:
    # 1. Clique com botão direito no banco 'banco_suprimentos'
    # 2. Selecione "Carregar arquivo SQL"
-   # 3. Navegue até a pasta util/base_de_dados.sql
+   # 3. Navegue até a pasta util/banco_suprimentos.sql
    # 4. Execute a importação
    ```
 
