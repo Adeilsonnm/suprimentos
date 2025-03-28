@@ -1,15 +1,5 @@
 # Requisitos e Instalação do Sistema de gerenciamento de Produtos
 
-## Alguns Recustos
-### Criar Produtos
-![Descrição da Imagem](docs/criar_produto.PNG)
-
-### Listar Produtos
-![Descrição da Imagem](docs//listagem_produtos.PNG)
-
-### Listar produdos na tela inicial
-![Descrição da Imagem](docs/homepage.PNG)
-
 
 ## 1. Requisitos do Sistema
 
@@ -139,19 +129,6 @@ php artisan serve
 email : admin@admin.brasil
 senha : 123456
 
-### 1.5 Verificação da Instalação Local
-
-Lista de verificação:
-- [ ] Repositório clonado com sucesso
-- [ ] Dependências do Composer instaladas
-- [ ] Dependências do Node.js instaladas
-- [ ] Arquivo .env configurado
-- [ ] Banco de dados importado
-- [ ] Assets compilados
-- [ ] Storage link criado
-- [ ] Servidor rodando
-- [ ] Acesso ao frontend funcionando
-- [ ] Acesso ao painel admin funcionando
 
 Em caso de problemas:
 1. Verifique as permissões das pastas:
@@ -297,9 +274,15 @@ php artisan migrate:fresh
 ```
 
 
-## 4. Manutenção
+## 4. Alguns Recursos
 
-- Fazer backup regular do banco de dados
-- Manter as dependências atualizadas
-- Monitorar logs de erro
-- Verificar atualizações de segurança
+### Criar Produtos
+![Cria Produto](docs/criar_produto.PNG)
+
+### Listar Produtos
+![Lista Produtos](docs//listagem_produtos.PNG)
+
+### Listar produtos na tela inicial
+![Pagina Inicial](docs/homepage.PNG)
+
+
