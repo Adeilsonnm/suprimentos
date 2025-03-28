@@ -1,5 +1,15 @@
-# Requisitos e Instalação do Sistema de  gerenciamento de Produtos Laravel 11
-##Adeilson 27-03-2025
+# Requisitos e Instalação do Sistema de gerenciamento de Produtos
+
+## Alguns Recustos
+### Criar Produtos
+![Descrição da Imagem](docs/criar_produto.PNG)
+
+### Listar Produtos
+![Descrição da Imagem](docs//listagem_produtos.PNG)
+
+### Listar produdos na tela inicial
+![Descrição da Imagem](docs/homepage.PNG)
+
 
 ## 1. Requisitos do Sistema
 
