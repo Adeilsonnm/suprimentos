@@ -1,11 +1,12 @@
 # Requisitos e Instalação do Sistema de gerenciamento de Produtos
 
-
 ## 1. Requisitos do Sistema
 
 ### 1.1 Sistema Operacional
 - Windows 10/11 (Desenvolvimento)
 - Debian 11 ou superior (Produção)
+- https://www.php.net/downloads.php
+- https://getcomposer.org/
 
 ### 1.2 Software Necessário
 - PHP 8.3
