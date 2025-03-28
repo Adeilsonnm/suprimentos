@@ -54,7 +54,7 @@ FLUSH PRIVILEGES;
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/[usuario]/suprimentos.git
+git clone https://github.com/Adeilsonnm/suprimentos.git
 cd suprimentos
 ```
 
