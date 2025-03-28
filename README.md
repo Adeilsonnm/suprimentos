@@ -123,6 +123,7 @@ php artisan view:clear
 10. Inicie o servidor de desenvolvimento:
 ```bash
 php artisan serve
+npm run dev (iniciar VITE)
 ```
 
 11. Acesse o sistema:
